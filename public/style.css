@@ -1,0 +1,104 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.leaflet-container {
+    height: 100vh;
+}
+
+.leaflet-attribution-flag {
+    display: none!important;
+}
+
+.leaflet-map-pane  {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dayz-location {
+    background-color: transparent;
+    border: none;
+}
+
+.dayz-location > p {
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transform: translate(-50%);
+    color: white;
+}
+
+
+.dayz-location > p:first-letter {
+    text-transform: uppercase;
+}
+
+.dayz-marker > p {
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transform: translate(-50%);
+}
+
+.dayz-carousel-zone {
+    stroke: none;
+    fill-opacity: 0.1;
+}
+
+.dayz-carousel-zone__red {
+    fill: red;
+}
+
+.dayz-carousel-zone__blue {
+    fill: blue;
+}
+
+.leaflet-control-attribution {
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    gap: 4px;
+    line-height: 0;
+}
+
+.leaflet-control-attribution__carousel {
+    display: flex;
+    align-items: center;
+    order: 1;
+
+    &::after {
+        content: '|';
+        margin-left: 4px;
+        color: black;
+    }
+}
+
+.leaflet-control-attribution__carousel > img {
+    margin-right: 4px;
+}
+
+.leaflet-control-attribution > a[href="https://leafletjs.com"] {
+    order: 2;
+}
+
+.leaflet-control-attribution__xam-nu {
+    order: 3;
+
+    &::before {
+        content: '|';
+        margin-right: 4px;
+        color: black;
+    }
+}
+
+.leaflet-control-attribution > span[aria-hidden="true"] {
+    display: none;
+}
