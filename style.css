@@ -14,10 +14,10 @@ html, body {
 }
 
 .leaflet-attribution-flag {
-    display: none!important;
+    display: none !important;
 }
 
-.leaflet-map-pane  {
+.leaflet-map-pane {
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -68,6 +68,7 @@ html, body {
     padding: 2px 6px;
     gap: 4px;
     line-height: 0;
+    font-size: 10px;
 }
 
 .leaflet-control-attribution__carousel {
@@ -102,4 +103,33 @@ html, body {
 
 .leaflet-control-attribution > span[aria-hidden="true"] {
     display: none;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar, .leaflet-bar, .leaflet-control > .elui-button {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+
+
+    &:hover {
+        background-color: #f4f4f4;
+    }
+}
+
+.leaflet-control-zoom {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+a[title*="Zoom"], .leaflet-control > .elui-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px!important;
+    height: 36px!important;
 }
