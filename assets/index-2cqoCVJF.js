@@ -2993,4 +2993,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     body {
         overflow: hidden;
     }
-`;Ly.createRoot(document.getElementById("root")).render(U.jsxs(Ht.ConfigProvider,{children:[U.jsx(gwe,{}),U.jsx(lS.YMInitializer,{accounts:[97081452],options:{webvisor:!0},version:"2"}),U.jsx(mwe,{})]}));
+`;Ly.createRoot(document.getElementById("root")).render(U.jsxs(Ht.ConfigProvider,{children:[U.jsx(gwe,{}),U.jsx(lS.YMInitializer,{accounts:[97081452],options:{webvisor:!1},version:"2"}),U.jsx(mwe,{})]}));
